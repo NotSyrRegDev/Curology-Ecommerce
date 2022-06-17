@@ -1,0 +1,649 @@
+/*----------------Global Classed------------------*/
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+p { margin: 0.75rem 0;}
+body { line-height: 1.4;}
+:root {
+  
+    --bg-light: #eee;
+    --bg-lightGray: #ddd;
+    --color-dark: #222;
+    --color-darkish: #111;
+    --color-black: #000;
+     --color-blue-prime: rgb(24, 17, 102);
+     --color-green-prime: rgb(17, 102, 20);
+    
+     
+
+
+
+ }
+ul { list-style: none;}
+/*----------------End Global Classed------------------*/
+
+/*----------------Utitlty Classed------------------*/
+
+/*-------------Headers-----------*/
+/* Use with this header the postion items left top right */
+.header-float{  height: 95vh;  background-size: cover; background-position: top; position: relative;}
+
+.content-center { max-width: 900px; text-align: center; }
+.banner-hero {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center;}
+
+.banner-hero {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center;}
+/* Banner Hero Center*/
+.banner-hero-c {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center;}
+/* Banner Hero Top*/
+.banner-hero-t {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: flex-start;}
+/* Banner Hero Bottom*/
+.banner-hero-b {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: flex-end;}
+/* Banner Right Center*/
+.banner-hero-r-c {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: right; align-items: center;}
+/* Banner Left Center*/
+.banner-hero-l-c {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: left; align-items: center;}
+/* Banner Right Top*/
+.banner-hero-r-t {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: left; align-items: flex-start;}
+/* Banner Left Top*/
+.banner-hero-l-t {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: left; align-items: flex-start;}
+/* Banner Right Bottom*/
+.banner-hero-r-b {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: left; align-items: flex-start;}
+/* Banner Left Bottom*/
+.banner-hero-l-b {position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: left; align-items: flex-end;}
+ 
+.header-fixed { position: fixed; top: 0; left: 0; width: 100%; padding: 40px 100px; z-index: 150; display: flex; align-items: center; justify-content: space-between; transition: 0.5s; }  
+  
+   
+/*--------------------------BANNER HERO FLEXBOX-------------------------------*/
+
+/*---------------------------BANNER HERO CENTER---------------------------------*/
+/* banner hero center center */
+
+.banner-hero-c { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: center; justify-content: center;  text-align: center; }
+
+
+/* banner hero cener top */
+.banner-hero-c-t { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: center;  text-align: center; }
+
+
+/* banner hero cener down */
+.banner-hero-c-d { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-end; justify-content: center;  text-align: center; }
+
+/*---------------------------BANNER HERO RIGHT---------------------------------*/
+
+/* banner hero right center */
+.banner-hero-r { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: center; justify-content: center;  text-align: right; }
+
+/* banner hero right top */
+.banner-hero-r-t { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: center;  text-align: right; }
+
+
+/* banner hero right down */
+.banner-hero-r-d { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-end; justify-content: center;  text-align: right; }
+
+
+/*---------------------------END BANNER HERO LEFT---------------------------------*/
+
+
+/* banner hero left center */
+.banner-hero-l { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: center; justify-content: center;  text-align: left; }
+
+
+/* banner hero left top */
+.banner-hero-l-t { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-start; justify-content: center;  text-align: left; }
+
+
+/* banner hero left down */
+.banner-hero-l-d { min-height: 100vh; position: relative; width: 100%; display: flex; align-items: flex-end; justify-content: center;  text-align: left; }
+
+
+.banner-subhero-sb { display: flex; justify-content:space-between  ; align-items: center;}
+.banner-subhero-sv { display: flex; justify-content:space-evenly  ; align-items: center;}
+
+/*--------------------------BANNER HERO FLEXBOX-------------------------------*/
+
+
+
+
+/*----Containers*/
+.container { max-width: 1100px; margin: 0 auto; overflow: auto; padding: 0 40px;}
+.container-big { max-width: 1050px; margin: 0 auto; overflow: auto; padding: 0 40px;}
+.container-sm { max-width: 1300px; margin: 0 auto; overflow: auto; padding: 0 40px;}
+/*----WIDTHS*/
+.w-25 { width: 25%;}
+.w-50 { width: 50%;}
+.w-75 { width: 75%;}
+.w-100 { width: 100%;}
+
+/*----HEIGHTS*/
+
+.h-25 { height: 25%;}
+.h-50 { height: 50%;}
+.h-75 { height: 75%;}
+.h-100 { height: 100%;}
+
+
+.min-h-25 { min-height: 25vh;}
+.min-h-50 { min-height: 50vh;}
+.min-h-75 { min-height: 75vh;}
+.min-h-100 { min-height: 100vh;}
+
+.min-w-25 { min-width: 25vw;}
+.min-w-50 { min-width: 50vw;}
+.min-w-75 { min-width: 75vw;}
+.min-w-100 { min-width: 100vw;}
+
+/*----Displays*/
+.d-none { display: none;}
+.d-block { display: block;}
+.d-inline-block { display: inline-block;}
+.d-flex { display: flex;}
+.d-inline-flex { display: inline-flex;}
+.d-grid { display: grid;}
+.align-center { align-items: center;}
+.justify-center { justify-content: center;}
+.flex-center-2 { display: flex; align-items: center; justify-content: center;}
+.mx-auto { margin: 0 auto !important;}
+/*----Typography*/
+.t-bold { font-weight: bolder;}
+.t-medium{ font-weight: 400;}
+.font-small { font-size: 0.3rem;}
+.text-primary { color: #93cb52;}
+.heading-1 { letter-spacing: 6px; line-height: 4px; font-size: 1.8rem; font-weight: bold;}
+.text-hero { color: #fff; font-size: 2.8rem; letter-spacing: 10px; line-height: 0.2rem; font-weight: bold; font-style: inherit;}
+.l-heading { font-size: 4rem; margin-bottom: 0.75rem; line-height: 1.1;}
+.m-heading { font-size: 2rem; margin-bottom: 0.75rem; line-height: 1.1;}
+.lead { font-size: 0.8rem; margin-bottom: 2rem; line-height: 1.1; font-weight: 500;}
+.lead-sm { font-size: 0.6rem; margin-bottom: 2rem; line-height: 1.1; font-weight: 500;}
+.text-white { color: #fff;}
+.text-center { text-align: center;}
+.open-slide { width: 50px; height: 20px; background-color: black; margin:6px ;} 
+.mx-auto { margin: 0 auto;}
+.list { margin: 0.5rem 0;}
+.line-y { width: 60px; height: 2px; background: rgb(244, 196, 7);}
+.list li { padding: 0.5rem 0; border-bottom: #444 dotted 1px;}
+h1,h2 { margin: 10px 0; line-height: 1.2; font-weight: 300;}
+p {margin: 10px 0; }
+img{ width: 100%;}
+.sm { font-size: 1rem;}
+.md { font-size: 2rem;}
+.lg { font-size: 3rem;}
+.xl { font-size: 4rem;}
+.h-linear { font-size: 2.5rem ; text-transform: uppercase; font-weight: bold;
+    background-image: linear-gradient( to right bottom,#7ed56f53 , #2bb48480);
+    display: inline-block; -webkit-background-clip: text; color: transparent; 
+   letter-spacing: 0.2rem; transform: all 0.2s;}
+    .h-linear:hover { transform: skewY(2deg); text-shadow: 0.5rem 1rem 2rem rgba(0 ,0 ,0 ,0.2);}
+
+.search-input { border: none; width: 200px; height: 20px; border-radius: 50px; }
+
+/*----Postions*/
+.pos-r { position: relative;}
+.pos-a { position: absolute;}
+.pos-f { position: fixed;}
+.pos-s { position:sticky}
+
+/*----Border RADIUS*/
+.b-radius-25 { border-radius: 25%;}
+.b-radius-50 { border-radius: 50%;}
+.b-radius-75 { border-radius: 75%;}
+
+
+.square-img { width: 70px; height: 70px;}
+
+
+/*   Postion the logo to left top  */
+.logo-box { position: absolute;   top: 40px; left: 40px;}
+     
+
+/*   Postion the item to center   */
+.text-box-center {   position: absolute; top: 40%; left: 50%; 
+     transform: translate(-50% , -50%);  text-align: center;
+}
+       
+
+/*   Postion the item to top right   */
+.text-box-right {  position: absolute; top: 40px;  right: 40px;}
+     
+
+/*   Postion the item to top left   */
+.text-box-left {  position: absolute; top: 40px;  left: 40px;}
+  
+/*   Postion the item to Center left Side  */
+.text-box-c-left {  position: absolute; top: 40%; left: 10%; 
+    transform: translate(-50% , -50%);}
+
+/*   Postion the item to Center Right Side  */
+.text-box-c-right {  position: absolute; top: 40%; right: 10%; 
+    transform: translate(-50% , -50%);}
+
+/*   Postion the item to Bottom Right Side  */
+.text-box-b-left {  position: absolute; bottom: 20%; left: 10%; 
+    transform: translate(-50% , -50%);}
+
+/*   Postion the item to Center Left Side  */
+.text-box-b-right {  position: absolute; bottom: 20%; right: 10%; 
+    transform: translate(-50% , -50%);}
+
+
+/*----Buttons*/
+
+     .btn-primary { color: #fff; background: #93cb52; }
+     .btn-orange { color: #fff; background: rgba(255, 175, 2, 0.797);}
+     .btn-dark { background: #333; color: #fff;}
+.btn-regular { background: #eee; color: #222;}
+     .btn-border-white { background: none; border: 3px solid #fff;  color: #fff; border-radius: 5px; padding: 0.5rem 2rem ; display: inline-block;}
+/*--------Margin----------*/
+.my-1 { margin: 1rem 0;}
+.my-2 { margin: 1.5rem 0;}
+.my-3 { margin: 2rem 0;}
+.my-4 { margin: 3rem 0;}
+.my-5 { margin: 4rem 0;}
+
+.mx-1 { margin: 0 1rem;}
+.mx-2 { margin: 0 1.5rem;}
+.mx-3 { margin: 0 2.5rem;}
+.mx-4 { margin: 0 3rem;}
+.mx-5 { margin: 0 4rem;}
+
+
+.mr-1 { margin-right:  1rem;}
+.mr-2 { margin-right:  1.5rem;}
+.mr-3 { margin-right:  2.5rem;}
+.mr-4 { margin-right:  3rem;}
+.mr-5 { margin-right:  4rem;}
+
+
+.m-1 { margin: 1rem; }
+.m-2 { margin: 1.5rem ;}
+.m-3 { margin: 2rem ;}
+.m-4 { margin: 3rem ;}
+.m-5 { margin: 4rem;}
+
+
+.mt-1 { margin-top: 1rem !important;}
+.mt-2 { margin-top: 1.5rem !important;}
+.mt-3 { margin-top: 2rem !important;}
+.mt-4 { margin-top: 3rem !important;}
+.mt-5 { margin-top: 4rem !important;}
+
+
+.mb-1 { margin-bottom: 1rem !important;}
+.mb-2 { margin-bottom: 1.5rem !important;}
+.mb-3 {margin-bottom: 2rem !important;}
+.mb-4 {margin-bottom: 3rem !important;}
+.mb-5 {margin-bottom: 4rem !important;}
+
+/*--------Padding----------*/
+
+.py-1 { padding: 1rem 0 !important;}
+.py-2 { padding: 1.5rem 0 !important; }
+.py-3 { padding: 2rem 0 !important;}
+.py-4 { padding: 3rem 0 !important;}
+.py-5 { padding: 4rem 0 !important;}
+
+
+.pt-1 { padding-top: 1rem ;}
+.pt-2 { padding-top: 1.5rem ;}
+.pt-3 { padding-top: 2rem ;}
+.pt-4 { padding-top: 3rem ;}
+.pt-5 { padding-top: 4rem ;}
+
+
+
+.px-1 { padding: 0 1rem;}
+.px-2 { padding: 0 1.5rem;}
+.px-3
+.px-4 { padding: 0 3rem;}
+.px-5 { padding: 0 4rem;}
+
+.p-1 { padding: 1rem; }
+.p-2 { padding: 1.5rem ;}
+.p-3 { padding: 2rem ;}
+.p-4 { padding: 3rem ;}
+.p-5 { padding: 4rem !important; }
+     
+/*----Backgrounds*/
+
+.bg-light { background: #f4f4f4; color: #333; }
+.bg-white { background: #fff; color: #000; }
+.bg-dark { background: #333; color: #fff; }
+ /*----Cards----*/
+ .box-card { width: 100%; background: #fff; min-height: 20vh; }
+
+
+/*----BOX SHADOWS*/
+.box-sh-1 { box-shadow: 2px 8px 30px #222;}
+/*----IMGS*/
+.object-img { width: 20%; height: auto; object-fit: cover;}
+.img-res { width: 75%; overflow: hidden;}
+.icon-sm { width: 10%; object-fit: cover;}
+.icon-sm-2 { width: 5%; object-fit: cover;}
+
+
+/*----BORDERS*/
+.border-b-1 { border-bottom: 1px solid #fff;}
+.border-b-1-gray { border-bottom: 1px solid #dde2e4;}
+.border-b-3-gray { border-bottom: 3px solid #dde2e4;}
+
+/*----Navbar--*/
+
+/*----Flex Navbar--*/
+.img-photo { width: 100%; height: auto;}
+.logo-box { width: 5%; height: 5%;}
+.logo-nav { width: 100%; height: 3%;}
+.ul-flex { display: flex; }
+.ul-flex li a{ margin: 0 20px;}
+#navbar-flex { background: #fff; color: var(--color-darkish); position: sticky; top: 0; 
+    overflow: hidden; display: flex; justify-content: space-between; z-index: 1;
+padding: 1rem;}
+#navbar-flex ul { display: flex; align-items: center; list-style: none;}
+#navbar-flex ul li a{ color: var(--color-darkish); padding: 0.6rem; margin: 0 0.50rem;}
+#navbar-flex ul li a:hover { background: #93cb52; padding: 0.6rem; border-radius: 5px;}
+.m-line { width: 15px; height: 3px; background: #000; margin: 5px;}
+
+/*----Postion Navbar--*/
+#navbar-pos { background: #222; position: sticky; display: flex; }
+#navbar-pos::after { content: ''; clear: both; display: table;} 
+
+#navbar-pos nav-logo-box {  float: left; padding-left: 20px; }
+#navbar-pos ul { float: right; list-style: none; position: relative; }
+#navbar-pos ul li { float: left; display: inline-block; background: #1b1b1b; margin: 0 5px;}
+
+#navbar-pos ul li:hover > ul { top: 30px; opacity: 1; visibility: visible;}
+
+#navbar-pos ul li a { color: #fff; text-decoration: none; padding: 8px 15px;}
+#navbar-pos ul ul { position: absolute; top: 30px; opacity: 0; visibility: hidden; transition: all 0.5s;}
+#navbar-pos ul ul li { position: relative ; margin: 0; width: 150px; float: none; display: list-item; border-bottom: 1px solid rgba(0,0,0,0.4);}
+#navbar-pos ul ul ul li { position: relative ; top: -30px; left: 150px; } 
+#navbar-pos ul ul ul ul li { position: relative ; top: -50px; left: 150px; } 
+
+/*----FLEX NAVBAR WITH OPEN SLIDE--*/
+#navbar-flex-2 { background-color: #3b5998; height: 40px; overflow: hidden; display: flex; justify-content: space-between;}
+
+#navbar-flex-2 ul { list-style: none; margin: 8px 0 0 0; display: flex; align-items: baseline;}
+
+#navbar-flex-2 ul li a { text-decoration: none; color: #f2f2f2; float: left; display: block;  text-align: center; font-size: 17px; margin: 0 2rem; }
+
+#navbar-flex-2 ul li a:hover { background-color: #ddd; color: #000;}
+
+/*-----Open Slide----*/
+
+.side-nav { height: 100%; width: 0; position: fixed; z-index: 4000; top: 0; left: 0; background-color: #111; opacity: 0.9; overflow-x: hidden; padding-top: 60px; transition: all 0.5s ease-in-out;}
+
+
+.side-nav a { padding: 20px 10px 10px 30px; text-decoration: none; color: #ccc; font-size: 22px; display: block; transition: 0.3s;}
+
+/*POSTION THE BTN CLOSE */
+.side-nav .btn-close { position: absolute; top: 0; right: 22px; font-size: 22px; margin-left: 50px;}
+
+
+/*-----Open Slide Lines 3 times----*/
+.line-slide { width: 30px; height: 5px; background-color: #fff; margin:6px ;}  
+
+/*------media queries------*/
+@media (max-width: 568px) { #navbar-flex-2 ul { display: none;}}
+
+@media (min-width: 568px) {  .open-slide { display: none;}}
+  
+
+/* NAVBAR-NAVIGATION-MENU */
+
+#navigation-navbar { background: #222; padding: 5px  20px;}
+
+.menu-ul li { font-size: 16px; padding: 15px 5px;}
+.menu-ul  li a { display: block;  }
+.logo-nav-2 a { font-size: 20px ;}
+.button.secondary { border-bottom: 1px solid #444;}
+/* MOBILE MENU */
+.menu-ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+.toggle-2 { cursor: pointer; }
+.toggle-2{ order: 1;}
+.item-list-2 button { order: 2;}
+.item-list-2 { width: 100%; text-align: center; order: 3; display: none; }
+.item-list-2.active { display: block;}
+.bars { background: #999; display: inline-block; height: 2px; width: 18px; position: relative;   }
+.bars::before , .bars::after { background: #999;  height: 2px; width: 18px; position: absolute; content: '';  }
+.bars::before { top: 5px;}
+.bars::after { top: -5px;}
+/* TABLET MENU */
+@media all and ( min-width: 468px) {
+    .menu-ul  { justify-content: center;}
+    .logo-nav-2 { flex: 1;}
+    .item-list-2.button { width: auto; order: 1; display: block; }
+    .toggle-2 { order: 2;}
+    .button.secondary { border: 0;}
+    .button a { padding: 7px 15px; background: teal; border: 1px solid #006d6d; text-decoration: none; border-radius: 50em; }
+    .button.secondary a { background: transparent;}
+    .button a:hover { transition: all 0.25s;}
+    .button:not(.secondary) a:hover {background: #006d6d; border-color: #005959; }
+    .button.secondary a:hover { color: #ddd; }
+}
+/* DESKTOP MENU */
+@media all and ( min-width: 768px) {
+   .item-list-2 { display: block; width: auto; }
+   .toggle-2 { display: none;}
+   .logo-nav-2 {order: 0;}
+   .item-list-2 { order: 1;}
+   .button { order: 2;}
+   .menu-ul li { padding: 15px 10px;}
+   .menu-ul li.button { padding-right: 0;}
+}
+
+/* End NAVBAR-NAVIGATION-MENU */
+
+
+
+.align-center { align-items: center !important;}
+.flex-cols { display: flex; padding: 1rem;}
+.flex-col-c { flex: 1; text-align: center; padding: 1rem;}
+.flex-col-r { flex: 1; text-align: right; padding: 1rem;}
+.flex-col-l { flex: 1; text-align: left; padding: 1rem;}
+.justify-sv { justify-content: space-evenly;}
+.justify-fe{ justify-content: flex-end;}
+.justify-ct { justify-content: center;}
+.align-center { align-items: center !important;}
+.align-baseline { align-items: baseline !important;}
+.align-s-center { align-self: center !important;}
+.f-sv { justify-content: space-evenly; display: flex;}
+.f-sp { justify-content: space-between; display: flex;}
+.f-fs { justify-content:flex-start; display: flex;}
+.f-fe { justify-content: flex-end; display: flex;}
+.f-sa { justify-content: space-around; display: flex;}
+.f-ct { justify-content: center; display: flex; }
+/*----Display FLexed--*/
+.flex-col { display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: center; height: 100%; }
+.flex-col-l { display: flex; flex-direction: column; text-align: left; align-items: flex-start; justify-content: center; height: 100%; }
+    
+    .flex-row { display: flex; text-align: center; align-items: center; justify-content: center; height: 100%;}
+    .flex-sp { display: flex; text-align: center; align-items: center; justify-content: space-between; height: 100%;}
+    .flex-fs { display: flex; text-align: center; align-items: center; justify-content: flex-start; height: 100%;}
+    .flex-fe { display: flex; text-align: center; align-items: center; justify-content: flex-end; height: 100%;}
+   
+    /*----Normal Flex--*/
+    .flex { display: flex;}
+    /*---childs*/
+    .flex div {flex: 1;}
+    /*----Like a contianer to align items on it--*/
+    .flex-center { width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0 1.5rem;}
+
+    /*----Area width with items aligned to center--*/
+    .area-center {width: 100%; max-width: 98rem; padding: 5rem; background: #fff; box-shadow: 0 1.4rem 8rem rgba(0,0,0,.3); display: flex; align-items: center; border-radius: 0.8rem; position: relative;}
+    .area-start {width: 100%; max-width: 98rem; padding: 5rem; background: #fff; box-shadow: 0 1.4rem 8rem rgba(0,0,0,.3); display: flex; align-items: flex-start; border-radius: 0.8rem;}
+    .area-end {width: 100%; max-width: 98rem; padding: 5rem; background: #fff; box-shadow: 0 1.4rem 8rem rgba(0,0,0,.3); display: flex; align-items: flex-end; border-radius: 0.8rem;}
+
+     /*----Responsive Box Image --*/
+.box-img { max-width: 35rem; min-width: 35rem; height: 30rem; position: relative;} 
+
+.box-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 0.8rem; display: block;}
+.box-img::before { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 0;  box-shadow: 0.5rem 0.5rem 3rem 0.5px rgba(0,0,0,0.4) ; }
+
+
+/*-------------------- Grids--------------------  */
+
+
+.row {max-width: 960px; margin: 0 auto; margin-bottom: 80px; display: block; }
+.row::after { content: ""; display: table; clear: both;}
+
+.col { float: left;}
+
+
+
+
+
+/*---------Cols 2--------------*/
+/* Col 1 Of 2 */
+.col-1-2 { width: calc((100% - 6rem) / 2); }
+  
+.col-1-2:not(:last-child) { margin-right: 6rem;}
+
+/*---------End Cols 2--------------*/
+
+
+/*---------Cols 3--------------*/
+/* Col 1 Of 3 */
+.col-1-3 {  width: calc((100% -  2 * 6rem) / 3); }
+  
+.col-1-3:not(:last-child) { margin-right: 6rem;}
+
+
+/* Col 2 Of 3 */
+.col-2-3 {  width: calc( 2 * ((100% -  2 * 6rem) / 3) + 6rem ); }
+  
+.col-2-3:not(:last-child) { margin-right: 6rem;}
+
+/*---------End Cols 3--------------*/
+
+/*--------- Cols 4--------------*/
+/* Col 1 Of 4 */
+.col-1-4 {  width: calc((100% -  3 * 6rem) / 4); }
+  
+.col-1-4:not(:last-child) { margin-right: 6rem;}
+
+/* Col 2 Of 4 */
+.col-2-4 {  width: calc( 2 * ((100% -  3 * 6rem) / 4) + 6rem ); }
+  
+.col-2-4:not(:last-child) { margin-right: 6rem;}
+
+/* Col 3 Of 4 */
+.col-3-4 {  width: calc( 3 * ((100% -  3 * 6rem) / 4) + 2 * 6rem ); }
+  
+.col-3-4:not(:last-child) { margin-right: 6rem;}
+
+ /*---------End Cols 4--------------*/
+
+ /*--------- Cols 6--------------*/
+
+/* Col 1 Of 6 */
+.col-1-6 {  width: calc((100% -  5 * 6rem) / 6); }
+  
+.col-1-6:not(:last-child) { margin-right: 6rem;}
+
+/* Col 2 Of 6 */
+.col-2-6 {  width: calc( 3 * ((100% -  5 * 6rem) / 6)); }
+  
+.col-2-6:not(:last-child) { margin-right: 6rem;}
+
+/* Col 3 Of 6 */
+.col-3-6 {  width: calc( 4 * ((100% -  5 * 6rem) / 6) + 6rem ); }
+  
+.col-3-6:not(:last-child) { margin-right: 6rem;}
+
+/* Col 4 Of 6 */
+.col-4-6 {  width: calc( 4 * ((100% -  5 * 6rem) / 6) + 3 * 6rem ); }
+  
+.col-4-6:not(:last-child) { margin-right: 6rem;}
+
+/* Col 5 Of 6 */
+.col-5-6 {  width: calc( 5 * ((100% -  5 * 6rem) / 6) + 4 * 6rem ); }
+  
+.col-5-6:not(:last-child) { margin-right: 6rem;}
+
+ /*--------- End Cols 6--------------*/
+
+
+  /*--------- Cols 8--------------*/
+
+  
+/* Col 1 Of 8 */
+.col-1-8 {  width: calc((100% -  7 * 6rem) / 8); }
+  
+.col-1-8:not(:last-child) { margin-right: 6rem;}
+
+/* Col 2 Of 8 */
+.col-2-8 {  width: calc( 4 * ((100% -  7 * 6rem) / 8) ); }
+  
+.col-2-8:not(:last-child) { margin-right: 6rem;}
+
+/* Col 3 Of 8 */
+.col-3-8 {  width: calc( 8 * ((100% -  7 * 6rem) / 8) ); }
+  
+.col-3-8:not(:last-child) { margin-right: 6rem;}
+
+/* Col 4 Of 8 */
+.col-4-8 {  width: calc( 7 * ((100% -  7 * 6rem) / 6) + 6rem ); }  
+
+.col-3-8:not(:last-child) { margin-right: 6rem;}
+  /*---------End Cols 8--------------*/
+
+/*-------------------- End Grids--------------------  */
+
+
+/*----------------------------------CSS GRID-----------------------------------*/
+.d-grid { display: grid !important;}
+/* HRIZIENATAL */
+.g-col-2 { display: grid; grid-template-columns: repeat(2 , 1fr); }
+.g-col-3 { display: grid; grid-template-columns: repeat(3 , 1fr); }
+.g-col-6 { display: grid; grid-template-columns: repeat(6 , 1fr); }
+.g-col-4 { display: grid; grid-template-columns: repeat(4 , 1fr); }
+.g-col-8 { display: grid; grid-template-columns: repeat(8 , 1fr); }
+.g-col-10 { display: grid; grid-template-columns: repeat(10 , 1fr); }
+.g-col-12 { display: grid; grid-template-columns: repeat(12 , 1fr); }
+
+/* HRIZIENATAL AND VERTICAL */
+.g-col-2-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(2 , 2fr); }
+.g-col-3-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(3 , 2fr); }
+.g-col-4-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(4 , 2fr); }
+.g-col-6-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(6 , 2fr); }
+.g-col-8-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(8 , 2fr); }
+.g-col-10-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(10 , 2fr); }
+.g-col-12-2 { display: grid; grid-template: repeat(2 , 2fr) / repeat(12 , 2fr); }
+
+
+
+
+
+/*----------------------------------END CSS GRID-----------------------------------*/
+
+/*----------------End Utitlty Classed------------------*/
+
+
+
+@media (max-width: 991px) {
+   
+    #navbar-flex ul { display: none;}
+    
+    #navbar-flex ul.active { width: 100%; height: calc(100% - 68px);  position: fixed; top: 68px; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; background: #fff;}
+
+    .logo-nav {width: 100%; height: auto;  margin-top: 1rem;}
+  
+   
+   .col-1-2 { text-align: center;}
+   
+  
+}
+@media (max-width: 749px) {
+
+    .flex-cols { flex-direction: column;}
+    
+}
+
+@media (max-width: 476px) {
+   
+   
+    .logo-nav {width: 100%; height: auto;  margin-top: 1rem;}
+  
+
+    .flex-cols { flex-direction: column;}
+   
+ 
+}
