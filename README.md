@@ -19,4 +19,4 @@ Curology is an ecommerce website that let you buy skin care products for women a
 
 
 
-> Check Thisnch=master)](https://travis-ci.org/joemccann/dillinger)
+> Check This [Live Preview](https://notsyrregdev.github.io/Curology-Ecommerce/)
